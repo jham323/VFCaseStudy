@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vector Flux - Retro Arcade Space Shooter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="grid-background"></div>
+    <div class="stars"></div>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="glitch-text">Vector Flux</h1>
+            <p class="tagline">A vaporwave space shooter born from vibe coding</p>
+            
+            <div class="game-container">
+                <iframe id="game-frame" 
+                    src="https://jham323.github.io/VectorFluxGame/" 
+                    allow="fullscreen"
+                    allowvr="yes"
+                    loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <div class="scroll-indicator">
+        <p>Scroll to explore more</p>
+        <div class="arrow-down"></div>
+    </div>
+    
+    <!-- Development Journey Section -->
+    <section class="development">
+        <div class="container">
+            <h2 class="section-title">How I Built This</h2>
+            <div class="two-column">
+                <div class="column text-column">
+                    <div class="dev-subsection">
+                        <h3>Why I Started This</h3>
+                        <p>As someone with ZERO coding experience (aside from customizing my Myspace page with some sparkly HTML tags), I never thought I'd build a game. Vector Flux was born from curiosity and a newfound obsession with "vibe coding" - using AI-assisted tools like Cursor to bring creative ideas to life through simple conversation.</p>
+                    </div>
+                    
+                    <div class="dev-subsection">
+                        <h3>AI Tools I Used</h3>
+                        <ul class="tools-list">
+                            <li><span class="tool-name">Cursor:</span> My primary development partner, transforming casual conversation into functional game mechanics using Claude 3.7.</li>
+                            <li><span class="tool-name">ChatGPT:</span> Helped craft prompts for the game design, enemy behaviors, and even generated prompts for other AI tools.</li>
+                            <li><span class="tool-name">Suno:</span> Created the dynamic synthwave soundtrack that perfectly matched the vaporwave aesthetics.</li>
+                            <li><span class="tool-name">ElevenLabs:</span> Generated sound effects to further enhance the overall experience.</li>
+                            <li><span class="tool-name">Supabase:</span> Powered the leaderboard system despite my complete lack of database knowledge.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="dev-subsection">
+                        <h3>Biggest Challenges</h3>
+                        <p>The journey wasn't without hurdles. My first version was just a triangle flying through a corridor of squares - clunky and visually unappealing. I redesigned everything with a vaporwave aesthetic, switching to particles for space effects.</p>
+                        <p>Ship design was especially challenging - I spent hours iterating on the player ship and creating enemy behaviors while dialing in game-play mechanics. The projectiles flew everywhere but straight at first! Eventually, I added targeting systems, heat-seeking missiles, and ship animations like banking and pitching. Tinkering with effective projectile range, hit count, spawn rate and other factors forced me to consider things that as a user I always take for granted. But with tools like Cursor (who even come up with their own cool ideas like shields) you can confidently dive into function implementation by just... asking.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- What I Learned Section -->
+    <section class="learnings">
+        <div class="container">
+            <h2 class="section-title">What I Learned</h2>
+            <ul class="animated-list">
+                <li class="learning-item" data-number="01">
+                    <h3>AI makes coding accessible</h3>
+                    <p>With just speech-to-text and conversational prompts, I built a working game in about two days despite having zero programming knowledge.</p>
+                </li>
+                <li class="learning-item" data-number="02">
+                    <h3>Iteration is everything</h3>
+                    <p>What started as clunky movements and basic shooting evolved through countless tweaks into fluid controls and engaging gameplay. But start small... Simple asks compound. I quickly learned to focus on individual components at a time. Lengthy prompts confused the models</p>
+                </li>
+                <li class="learning-item" data-number="03">
+                    <h3>Sound transforms experience</h3>
+                    <p>Once I added AI-generated music from Suno and sound effects generated from ElevenLabs, the game finally felt like it had its own personality and came to life.</p>
+                </li>
+                <li class="learning-item" data-number="04">
+                    <h3>Even databases are accessible</h3>
+                    <p>I implemented a functional leaderboard with Supabase despite never having worked with databases, API keys, or SQL before.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+    <!-- Get Involved Section -->
+    <section class="get-involved">
+        <div class="container">
+            <h2 class="section-title">Get Involved</h2>
+            <div class="cta-grid">
+                <a href="https://www.linkedin.com/in/josh-hamilton-4601a27/" class="cta-card linkedin" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-linkedin"></i>
+                    <h3>Follow me on LinkedIn</h3>
+                    <p>See my posts about this project and more</p>
+                </a>
+                <a href="https://github.com/jham323/VectorFluxGame" class="cta-card github" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-github"></i>
+                    <h3>GitHub Repository</h3>
+                    <p>Check out the code behind Vector Flux</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Vector Flux &copy; 2025 | Created with AI assistance and zero prior coding knowledge</p>
+        </div>
+    </footer>
+    
+    <script src="animations.js"></script>
+</body>
+</html> 
